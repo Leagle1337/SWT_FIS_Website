@@ -11,7 +11,7 @@ this should have created an Folder in your c:User\<YOURNAME>
 
 to get the updated repo use
 
-git pull SWT_FIS_Webseite master
+git pull SWT_FIS_Website master
 
 change your path to your saved/changed files with:
 

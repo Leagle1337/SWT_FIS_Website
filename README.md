@@ -1,4 +1,4 @@
-# SWT_FIS_Webseite
+# SWT_FIS_Website
 Softwaretechnik Website Labor
 
 To Work on this, you first need to clone this repo and ofc having git installed and working just enter these commandlines into your cmd or terminal.

@@ -1,30 +1,38 @@
 # SWT_FIS_Website
-Softwaretechnik Webseite Labor
+Softwaretechnik Website Labor
 
-To Work on this, you first need to clone this repo and ofc having git installed and working
+To Work on this, you first need to clone this repo and ofc having git installed and working just enter these commandlines into your cmd or terminal.
 
 clone this repo to have all files of this projekt
 
-git clone https://github.com/Leagle1337/SWT_FIS_Website
+```git clone https://github.com/Leagle1337/SWT_FIS_Website```
 
-to get the update repo use
+this should have created an Folder in your c:User\<YOURNAME>
 
-git pull SWT_FIS_Website master
+to get the updated repo use
+
+```git pull SWT_FIS_Website main```
 
 change your path to your saved/changed files with:
 
-cd <Name_Of_Folder>
+```cd SWT_FIS_WEBSITE```
 
-git add <FILE_NAME>
+now you schould see C:\User\<YOURNAME>\SWT_FIS_WEBSITE
 
-Or if you want all files to be updated use git add --all
+Use this command to update files
+
+```git add <FILE_NAME>```
+
+Or if you want all files to be updated use
+
+```git add --all```
 
 check status to see if the right files are gonna be changed:
 
-git status
+```git status```
 
-to update/commit your changes to the files use 
+to update and commit your changes to the repo use this and dont forget the massage
 
-git commit -m <"MESSAGE">
+```git commit -m <"MESSAGE">```
 
-git push
+```git push```

@@ -26,4 +26,5 @@ git status
 to update/commit your changes to the files use 
 
 git commit -m <"MESSAGE">
+
 git push

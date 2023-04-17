@@ -1,16 +1,26 @@
-var mysql      = require('mysql');
-var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'me',
-  password : 'secret',
-  database : 'my_db'
+var mysql = require('mysql');
+
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "yourusername",
+  password: "yourpassword",
+  database: "mydb"
 });
- 
-connection.connect();
- 
-connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
-  if (error) throw error;
-  console.log('The solution is: ', results[0].solution);
+
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+  var sql = "CREATE TABLE lecturer (lecturer_id INT(10), firstname VARCHAR(255), lastname VARCHAR(255))";
+  var sql = "CREATE TABLE room (roomnumber VARCHAR(255), lecture VARCHAR(255), lecturer VARCHAR(255))";
+  var sql = "CREATE TABLE lectures (lecture_id INT(10),lecturename VARCHAR(255))";
+  var sql = "INSERT INTO lecturer (lecturer_id, firstname, lastname) VALUES ?";
+  var values = [['1','Mirco','Sonntag']];
+  var sql = "INSERT INTO lectures (lecture_id, lecturename) VALUES ?";
+  var values = [['1','SWT']];
+  var sql = "INSERT INTO room (roomnumber, lecture, lecturer) VALUES ?";
+  var values = [['F1.010','SWT','Sonntag']];
+  con.query(sql, [values], function (err, result) {
+    if (err) throw err;
+    console.log("Number of records inserted: " + result.affectedRows);
+  });
 });
- 
-connection.end();

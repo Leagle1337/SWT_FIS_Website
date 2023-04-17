@@ -29,7 +29,7 @@ check status to see if the right files are gonna be changed:
 
 git status
 
-to update and commit your changes to the repo use 
+to update and commit your changes to the repo use this and dont forget the massage
 
 git commit -m <"MESSAGE">
 

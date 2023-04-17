@@ -15,9 +15,11 @@ git pull SWT_FIS_Website master
 
 change your path to your saved/changed files with:
 
-cd <Name_Of_Folder>
+cd SWT_FIS_WEBSEITE
 
 now you schould see C:\User\<YOURNAME>\SWT_FIS_WEBSEITE
+
+Use this command to update files
 
 git add <FILE_NAME>
 
@@ -27,7 +29,7 @@ check status to see if the right files are gonna be changed:
 
 git status
 
-to update/commit your changes to the files use 
+to update and commit your changes to the repo use 
 
 git commit -m <"MESSAGE">
 
